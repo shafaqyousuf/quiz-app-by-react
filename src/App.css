@@ -1,0 +1,42 @@
+.body{
+  background-image: url(https://t4.ftcdn.net/jpg/04/39/13/37/360_F_439133763_FrLdhZsd5aGC23r9ATARuKJBr8ifZjIe.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  color: white;
+}
+.question{
+  border: 4px solid white;
+  border-radius: 6px;
+  display: inline-block;
+  padding: 8px 80px;
+  margin: 100px;
+}
+.options{
+  border: 4px solid white;
+  border-radius: 6px;
+  padding: 15px;
+  margin: 10px;
+  color: white;
+  display: block;
+  width: 30%;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+}
+.optionBox{
+  position: relative;
+  left: 160px;
+  top: -50px;
+}
+.result{
+  font-weight: bolder;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  height: 100%;
+  margin: 0px 200px;
+}
