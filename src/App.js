@@ -75,8 +75,16 @@ function App() {
 
   return (
     <div className='body'>
-      {result ? (<h1 className='result'>Your Score "{marks}" points</h1>) : <div>
-        <div className='question'><h1>{questions[indexNum].question}</h1>
+      {result ? (<div className='resultDiv'>
+        <h1 className='result'>Total Questions:{questions.length}</h1>
+        <h1 className='result'>Questions Attempt: {questions.length}</h1>
+        <h1 className='result'>Correct Answers: {marks/10}</h1>
+        <h1 className='result'>Your Score "{marks}" points</h1>
+        <h1 className='result'>Your percentage is {(marks / (indexNum * 10)) * 100}%</h1>
+        { marks < (questions.length*10)/2 ? <h1 className='result'>Fail</h1> : <h1 className='result'>Pass</h1>}
+      </div>) : <div>
+        <div className='heading'><h1>HTML QUIZ</h1></div>
+        <div className='question'><span>Q no {indexNum + 1}/{questions.length}</span><span className='info'>Total Marks: {questions.length*10}</span><h1>{questions[indexNum].question}</h1>
         </div>
         <div className='optionBox'>{questions[indexNum].options.map((x, i) => {
           return <div key={i} className='options' onClick={() => checkAns(x, questions[indexNum].answer)}>{x}</div>
@@ -84,8 +92,6 @@ function App() {
         </div>
       </div>}
     </div>
-
-
   );
 }
 

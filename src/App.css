@@ -1,4 +1,4 @@
-.body{
+.body {
   background-image: url(https://t4.ftcdn.net/jpg/04/39/13/37/360_F_439133763_FrLdhZsd5aGC23r9ATARuKJBr8ifZjIe.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -6,14 +6,16 @@
   height: 100vh;
   color: white;
 }
-.question{
+
+.question {
   border: 4px solid white;
   border-radius: 6px;
   display: inline-block;
-  padding: 8px 80px;
-  margin: 100px;
+  padding: 0px 80px;
+  margin: 60px 100px;
 }
-.options{
+
+.options {
   border: 4px solid white;
   border-radius: 6px;
   padding: 15px;
@@ -26,17 +28,39 @@
   cursor: pointer;
   text-align: center;
 }
-.optionBox{
+
+.optionBox {
   position: relative;
   left: 160px;
   top: -50px;
 }
-.result{
+
+.resultDiv {
+  padding: 150px 2px;
+}
+
+.result {
   font-weight: bolder;
   display: flex;
   flex-direction: column;
   align-items: start;
-  justify-content: center;
+  justify-content: start;
   height: 100%;
   margin: 0px 200px;
+  padding: 6px 10px;
+}
+
+.heading {
+  border: 4px solid white;
+  border-radius: 6px;
+  padding: 0px 50px;
+  width: 250px;
+  position: relative;
+  left: 200px;
+  text-align: center;
+  top: 20px;
+}
+
+.info {
+  float: right;
 }
